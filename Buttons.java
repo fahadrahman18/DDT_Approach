@@ -36,7 +36,7 @@ public class Buttons {
 			WebElement getsize = driver.findElement(By.xpath("//button[@id='size']"));
 			System.out.println("size is " + getsize.getSize());  //Find the height and width
 			
-			
+			//Test ends
 			
 			
 			
