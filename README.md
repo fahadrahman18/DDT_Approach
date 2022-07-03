@@ -2,4 +2,4 @@
 Data Driven Testing
 
 
-Master Branch - Pushed codes from GitHub
+Master Branch - DDT Project - Pushed codes from GitHub 
