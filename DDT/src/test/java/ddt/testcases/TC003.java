@@ -6,8 +6,8 @@ import org.testng.annotations.Test;
 
 public class TC003 extends ProjectSpecificMethods {
 	
-	@Test
-	public void TC003_DuplicatedLead() throws InterruptedException {
+	@Test(dataProvider = "TestDatas")
+	public void TC003_DuplicatedLead(String username, String password, String cname, String fname, String lname, String phnnum, String country) throws InterruptedException {
 
 		WebElement enterusername = driver.findElement(By.id("username"));
 		enterusername.sendKeys("Demosalesmanager");

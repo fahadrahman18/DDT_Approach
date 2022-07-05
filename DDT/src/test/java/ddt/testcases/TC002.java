@@ -2,12 +2,19 @@ package ddt.testcases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TC002 extends ProjectSpecificMethods{
 	
-	@Test
-	public void TC002_EditLead() throws InterruptedException {
+	@BeforeTest
+	public void setData() {
+		 excelFilePath = "C://Users//User//git//repository//DDT//src//test//resources//testdata1.xlsx";
+	}
+	
+	
+	@Test(dataProvider = "testdata")
+	public void TC002_EditLead(String username, String password, String cname, String fname, String lname, String phnnum, String country) throws InterruptedException {
 
 		WebElement enterusername = driver.findElement(By.id("username"));
 		enterusername.sendKeys("Demosalesmanager");

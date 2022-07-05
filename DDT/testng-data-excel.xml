@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test-Leads">
+  <test name="Test-DataFromExcel">
     <classes>
-      
+      <class name="ddt.testcases.TC001"/>
 	  <class name="ddt.testcases.TC002"/>
-	  <class name="ddt.testcases.TC004"/>
     </classes>
-  </test> <!-- Test-Leads -->
+  </test> <!-- Test-DataFromExcel -->
 </suite> <!-- Suite -->
-
-
-							
